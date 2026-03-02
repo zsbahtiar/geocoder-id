@@ -1,0 +1,5 @@
+data/ext
+*.duckdb.wal
+.DS_Store
+/geocoder
+/geocoder-*
