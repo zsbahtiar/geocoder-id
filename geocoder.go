@@ -23,7 +23,7 @@ func New(dbPath string) (*Geocoder, error) {
 		return nil, fmt.Errorf("failed to open database: %w", err)
 	}
 
-	if _, err := db.Exec("LOAD spatial"); err != nil {
+	if _, err := db.Exec("INSTALL spatial; LOAD spatial"); err != nil {
 		db.Close()
 		return nil, fmt.Errorf("failed to load spatial extension: %w", err)
 	}
