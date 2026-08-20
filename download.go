@@ -10,7 +10,7 @@ import (
 
 const (
 	dbDownloadURL = "https://github.com/zsbahtiar/geocoder-id/releases/download/v%s/geocoder.duckdb"
-	latestVersion = "0.1.2"
+	latestVersion = "0.1.3"
 )
 
 var Version = "dev"
